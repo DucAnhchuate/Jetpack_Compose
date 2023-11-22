@@ -1,15 +1,15 @@
 package com.example.myapplication
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 
 @Composable
-fun MyApp() {
+fun MyApp(
+    navController: NavHostController
+) {
     // Create a NavHostController
-    val navController = rememberNavController()
-
     // Create a NavHost
     NavHost(
         navController = navController,
